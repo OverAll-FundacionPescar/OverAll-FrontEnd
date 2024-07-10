@@ -15,7 +15,9 @@
     margin: 0;
     padding: 0;
 }
-
+a{
+    font-family: "Stardos Stencil";
+}
 body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -57,21 +59,46 @@ nav{
     
     grid-column: 13/13;
     display: flex;
-    justify-content: end;
+    justify-content:center;
     
 }
-.user button{
+.user a{
     align-self: center;
     width: 30px;
     height: 30px;
-    margin-left: 15px;
+    margin: 15px;
+    border: none;
 }
+.user_menu{
+    display: none;
+    position: absolute;
+    top: 60px; left: 1100px;
+}
+.menu_list{
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 5px;
+    box-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid grey;
+    background-color: white;
+    
+}
+.menu_list ul {
+    margin: 3px;
+}
+.menu_list ul a{
+    
+    color: black;
+    text-decoration: none;
+}
+
+
+
 
 
 .Header{
     border: 1px solid black;
     grid-column: 1/13;
     grid-row: 2;
-    
-    
 }
