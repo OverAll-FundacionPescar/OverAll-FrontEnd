@@ -1,3 +1,14 @@
+/*Fuente de Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 /* Reseteo de propiedades */
 *{
     box-sizing: border-box;
