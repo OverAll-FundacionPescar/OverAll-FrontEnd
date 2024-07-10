@@ -21,3 +21,57 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
 }
+
+
+
+nav{
+    grid-column: 1/13;
+    grid-row: 1;
+    display: grid;
+    
+    padding: 5px;
+    color: white;
+    background-color: #025959;
+}
+
+.logo{
+    grid-column: 1/4;
+    display: flex;
+}
+.logo a{
+    align-self: center;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: aqua;
+}
+.logo img{
+    border-radius: 50px;
+    width: 55px;
+    padding: 3px;
+}
+.user{
+    
+    grid-column: 13/13;
+    display: flex;
+    justify-content: end;
+    
+}
+.user button{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+
+.Header{
+    border: 1px solid black;
+    grid-column: 1/13;
+    grid-row: 2;
+    
+    
+}
