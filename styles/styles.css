@@ -28,7 +28,7 @@ body{
 
 
 
-
+/* Estilos de todo el nav, ordenado en grillas */
 nav{
     grid-column: 1/13;
     grid-row: 1;
@@ -72,7 +72,7 @@ nav{
 }
 .user_menu{ 
     position: absolute;
-    top: 60px; left: 1100px;
+    top: 60px; left: 1650px;
 }
 .menu_list{
     display: flex;
@@ -90,13 +90,39 @@ nav{
     color: black;
     text-decoration: none;
 }
-
-
-
+/* Fin de estilos del nav */
 
 
 .Header{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 0, 0);
     grid-column: 1/13;
     grid-row: 2;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.Header .buscador{
+    display: flex;
+    flex-direction: column;
+    
+}
+.buscador label{
+    margin-top: 130px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: "Stardos Stencil";
+}
+.buscador input{
+    border: grey solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 700px;
+    height: 40px;
+}
+.filtros{
+    display: flex;
+    justify-content: space-between;
+    
 }

@@ -1,6 +1,8 @@
+//Variables
 const menu_user = document.querySelector(".user_menu");
 const user_button = document.querySelector(".user_button");
 
+//Funcion para renderizar menu de usuario
 function display_menu(){
     user_button.addEventListener("click", (e) => {
         e.preventDefault();
@@ -13,7 +15,9 @@ function display_menu(){
 }
 
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Cargo la pagina");
+    console.log("Carga script de diplay_menu");
     display_menu();
 })
