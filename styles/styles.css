@@ -7,13 +7,21 @@
     font-weight: 400;
     font-style: normal;
 }
-
+.piazzolla{
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 100 900;
+}
 
 /* Reseteo de propiedades */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/* Regla para que siempre tenga el 100 del contenedor osea el figure */
+img{
+    width: 100%;
 }
 a{
     font-family: "Stardos Stencil";
@@ -94,6 +102,8 @@ nav{
 /* Fin de estilos del nav */
 
 
+
+/* Nav con buscador y filtros */
 .Header{
     border: 1px solid rgb(255, 0, 0);
     grid-column: 1/13;
@@ -105,29 +115,31 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
-    
+
     display: flex;
     justify-content: center;
 }
 
+
 .Header .buscador{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+
     
 }
 .buscador label{
     margin-top: 130px;
     margin-bottom: 15px;
     margin-left: 20px;
-    font-size: 20px;
-    font-family: "Stardos Stencil";
+    font-size: 1.5rem;
+    font-family: 'Piazzolla';
 }
 .buscador input{
     border: grey solid 2px;
     padding: 10px;
     border-radius: 20px;
-    width: 700px;
+    width: 44.5rem;
     height: 40px;
 }
 .filtros{
@@ -136,7 +148,63 @@ nav{
     
 }
 
+/* CONTENIDO PRINCIPAL, RECOMENDADOS, RESEÑAS, PROYECTO Y EQUIPO */
 .Main{
     grid-row: 3;
-    grid-column: 1/13;
+    grid-column: 2/12;
+    
+}
+.Recomendados h2{
+    font-family: 'Piazzolla';
+    text-align: center;
+    margin: 50px;
+    font-size: 2.3rem;
+    text-decoration: underline;
+    
+    
+}
+.Recomendados section{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.recomendados-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid gray;
+    width: 420px;
+    
+    border-radius: 22px;
+}
+
+.recomendados-content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+}
+.recomendados-content, .recomendados-mainpic{
+    width: 90%;
+    padding-top: 20px;
+    
+}
+.recomendados-mainpic img{
+    border-radius: 8px;
+
+}
+.recomendados-profile img{
+    border-radius: 100px;
+
+}
+.recomendados-profile{
+    width: 60px;
+}
+.recomendados-title{
+    font-size: 1.2rem;
+}
+.recomendados-sub{
+    color: grey;
+    padding-left: 15px;
 }
