@@ -22,6 +22,7 @@
 /* Regla para que siempre tenga el 100 del contenedor osea el figure */
 img{
     width: 100%;
+    height: 100%;
 }
 a{
     font-family: "Stardos Stencil";
@@ -256,4 +257,24 @@ nav{
 }
 .about-content p{
     font-size: 1.6rem;
+}
+
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+.team-container img{
+    width: 252px;
+    height: 272px;
+    border: 5px solid #025959;
+    border-radius: 13px;
+
+}
+.team-container figcaption{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Piazzolla';
 }
