@@ -105,11 +105,11 @@ nav{
 
 /* Nav con buscador y filtros */
 .Header{
-    border: 1px solid rgb(255, 0, 0);
+    
     grid-column: 1/13;
     
     grid-row: 2;
-    height: 550px;
+    height: 600px;
     
     background-image: url(assets/FondoHeader.jpeg);
     background-repeat: no-repeat;
@@ -150,20 +150,19 @@ nav{
 
 /* CONTENIDO PRINCIPAL, RECOMENDADOS, RESEÑAS, PROYECTO Y EQUIPO */
 .Main{
-    grid-row: 3;
+    grid-row: 3 / 5;
     grid-column: 2/12;
     
 }
-.Recomendados h2{
+.Main article h2{
     font-family: 'Piazzolla';
     text-align: center;
-    margin: 50px;
+    margin: 100px;
     font-size: 2.3rem;
     text-decoration: underline;
-    
-    
+
 }
-.Recomendados section{
+.Recomendados section {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -194,7 +193,7 @@ nav{
     border-radius: 8px;
 
 }
-.recomendados-profile img{
+.profile img{
     border-radius: 100px;
 
 }
@@ -207,4 +206,29 @@ nav{
 .recomendados-sub{
     color: grey;
     padding-left: 15px;
+}
+
+.opcontainer section{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+.opiniones{
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    border: 1px solid gray;
+    gap: 20px;
+}
+.opiniones h6{
+    font-size: 1.5rem;
+}
+.opiniones figure{
+    width: 80px;
 }
