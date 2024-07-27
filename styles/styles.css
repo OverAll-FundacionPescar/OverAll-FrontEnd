@@ -22,6 +22,7 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
+    background-color: #E1EBED;
 }
 
 
@@ -72,7 +73,7 @@ nav{
 }
 .user_menu{ 
     position: absolute;
-    top: 60px; left: 1650px;
+    top: 60px; left: 83%;
 }
 .menu_list{
     display: flex;
@@ -96,7 +97,15 @@ nav{
 .Header{
     border: 1px solid rgb(255, 0, 0);
     grid-column: 1/13;
+    
     grid-row: 2;
+    height: 550px;
+    
+    background-image: url(assets/FondoHeader.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
     
     display: flex;
     justify-content: center;
@@ -125,4 +134,9 @@ nav{
     display: flex;
     justify-content: space-between;
     
+}
+
+.Main{
+    grid-row: 3;
+    grid-column: 1/13;
 }
