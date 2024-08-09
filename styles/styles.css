@@ -120,7 +120,9 @@ nav{
     display: flex;
     justify-content: center;
 }
-
+.buscador_container{
+    width: 100;
+}
 
 .Header .buscador{
     display: flex;
@@ -140,12 +142,14 @@ nav{
     border: grey solid 2px;
     padding: 10px;
     border-radius: 20px;
-    width: 44.5rem;
+    min-width: 800px;
+    overflow: hidden;
     height: 40px;
 }
 .filtros{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
