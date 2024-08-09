@@ -1,0 +1,99 @@
+/*Fuente de Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.piazzolla{
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 100 900;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGIN & REGISTER */
+
+body{
+    background-color: #E1EBED;
+    background-image: url(assets/tools-7837749_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-container{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.Mainlogin h1{
+    font-size: 3rem;
+    font-family: "Stardos Stencil", system-ui;
+    
+}
+
+.login-form{
+    
+    display: flex;
+    flex-direction: column;   
+    border-radius: 15px;
+    padding: 30px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.81);
+    justify-content: space-around;
+    
+}
+
+div figure{
+    width: 300px;
+    border: 10px solid black;
+}
+div img{
+    width: 100%;
+    height: 00px;
+    
+}
+.login-form h1{
+    
+    text-align: center;
+}
+.correo-login{
+    display: flex;
+    flex-direction: column;
+    
+}
+.login-form input{
+    height: 50px;
+    border-radius: 10px;
+    border: 0.5px solid grey
+}
+.correo-login label{
+    font-size: 1.7rem;
+}
+.pass-login{
+    display: flex;
+    flex-direction: column;
+}
+.pass-login input{
+    height: 50px;
+}
+.pass-login label{
+    font-size: 1.7rem;
+}
+button{
+    height: 70px;
+    margin-top: 20px;
+    background-color: #568EDC;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid grey;
+    font-family: 'Piazzolla';
+    font-size: 1.5rem;
+}
+
