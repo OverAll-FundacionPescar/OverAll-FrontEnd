@@ -1,0 +1,326 @@
+/*Fuente de Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.piazzolla{
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 100 900;
+}
+
+/* Reseteo de propiedades */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Regla para que siempre tenga el 100 del contenedor osea el figure */
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    font-family: "Stardos Stencil";
+}
+body{
+
+
+
+
+    background-color: #E1EBED;
+}
+
+
+
+
+/* Estilos de todo el nav, ordenado en grillas */
+nav{
+    grid-column: 1/13;
+    grid-row: 1;
+    display: grid;
+    padding: 5px;
+    color: white;
+    background-color: #243A69;
+}
+.logo{
+    grid-column: 1/4;
+    display: flex;
+}
+.logo a{
+    align-self: center;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #E87A00;
+}
+.logo img{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+}
+.user{
+    grid-column: 13/13;
+    display: flex;
+    justify-content:center;
+    
+}
+.user a{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border: none;
+}
+.user_menu{ 
+    position: absolute;
+    top: 60px; left: 83%;
+}
+
+
+/*Estilo del buscador*/
+
+.container-search{
+    display: flex;
+    margin: 1.5rem;
+    gap: 5rem;
+}
+
+.btn-search i {
+    display: flex;
+	font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #867f7f;
+	border-radius: 2rem;
+	background-color: #fafafa;
+	height: 3rem;
+    overflow: hidden;
+}
+
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+    width: 48rem;
+	font-size: 1.2rem;
+	padding: 0 2rem;
+	color: #777;
+	cursor: pointer;
+}
+
+.search-form .btn-search {
+	border: none;
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
+}
+
+
+/*Estilo del CHECKBOX*/
+.container-filtro{
+    display: flex;
+    background-color: #ffffff;
+	border: 2px solid #867f7f;
+    padding: 10px;
+    gap: 1rem;
+}
+
+.localidad{
+    width: 150px;
+    border-left: 2px solid #867f7f;
+}
+
+.text-title{
+    font-size: 16px;
+    color: #000000;
+    margin: 2rem;
+    margin-bottom: 30rem;
+}
+
+.list-items{
+    margin-top: 0.5rem;
+}
+
+.list-items .item{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 20px;
+    border-radius: 8px;
+}
+.list-items .item:hover{
+    background-color: #e7edfe;
+}
+
+.item .item-text{
+    font-size: 14px;
+    width: 90px;
+    font-weight: 400;
+    color: #333;
+}
+.item .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 1.5px solid #313030;
+    transition: all 0.3s ease-in-out;
+}
+.item.checked .checkbox{
+    background-color: #4070f4;
+    border-color: #4070f4;
+}
+.checkbox .check-icon{
+    color: #ffffff;
+    font-size: 11px;
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+.item.checked .check-icon{
+    transform: scale(1);
+}
+
+
+/*Estilo del MAIN*/
+
+.Main{
+    background-color: #ffffff;
+    border: 1.5px solid #243A69;
+    padding: 2rem;
+    margin: 1.5rem;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+/*Estilo del CARDS TECNICOS*/
+
+.card-profesional {
+    display: flex;
+    box-shadow: 2px 2px 2px 1px #969292;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    gap: 1px;
+}
+
+.conteiner-info{
+    width: 880px;
+}
+
+.conteiner-info .text{
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.conteiner-info h4{
+    font-size: 14px;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-info h3{
+    margin: 15px;
+    font-size: 12px;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+}
+
+.conteiner-info h2{
+    margin-left: 5px;
+    font-size: 26px;
+    color: #000000;
+}
+
+.nombre-stars {
+    display: flex;
+    width: 550px;
+    height: 40px;
+    gap: 10px;
+}
+
+.consulta {
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.consulta button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 150px;
+    height: 25px;
+    color: #f3f3f3;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background-color: #243A69;
+    cursor: pointer;
+}
+
+.consulta button:hover{
+    background-color: #E87A00;
+}
+
+.nombre-stars .fa-star{
+    display: flex;
+    align-items: center;
+    color: #D9D9D9;
+}
+
+.nombre-stars .fa-star:hover{
+    color: #E87A00;
+}
+
+.card-profesional .fa-heart{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 250px;
+    color: #D9D9D9;
+}
+
+.card-profesional .fa-heart:hover{
+    color: #000000;
+}
+
+.img-profesional{
+    width: 55px;
+    height: 55px;
+}
+
+
+
+
+
+
