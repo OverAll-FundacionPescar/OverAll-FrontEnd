@@ -32,6 +32,7 @@ body{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
     background-color: #E1EBED;
+    min-height: 100vh;
 }
 
 
@@ -120,7 +121,9 @@ nav{
     display: flex;
     justify-content: center;
 }
-
+.buscador_container{
+    width: 100;
+}
 
 .Header .buscador{
     display: flex;
@@ -140,12 +143,14 @@ nav{
     border: grey solid 2px;
     padding: 10px;
     border-radius: 20px;
-    width: 44.5rem;
+    min-width: 800px;
+    overflow: hidden;
     height: 40px;
 }
 .filtros{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 
@@ -277,4 +282,76 @@ nav{
     text-align: center;
     font-size: 1.4rem;
     font-family: 'Piazzolla';
+}
+
+footer{
+    grid-row: 5/5;
+    grid-column: 1/13;
+    background-color: #025959;
+    padding:20px 0;
+    color: #fff;
+    width:1903px;
+    height:956px;
+    
+}
+
+.contenedor{
+    grid-column: 1/13;
+    grid-row:1/6;
+    display:flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.information{
+    width: 497px;
+    height:516px;
+
+}
+.inf-title{
+
+}
+.inf-item{
+
+}
+
+.information h3,
+.redes h3,
+.contact h3 {
+    display : flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.information ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.information li {
+    margin: 10px 0;
+}
+
+.information a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.redes{
+    width:448px;
+    height:211px;
+}
+.redes-icon{
+    color: #fff;
+}
+.contact{
+    width:448px;
+    height:770px;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
 }

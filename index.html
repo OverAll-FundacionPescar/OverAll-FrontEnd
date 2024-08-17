@@ -45,6 +45,7 @@
         <meta name="msapplication-wide310x150logo" content="./images/icon_widetile.png" />
 
         <link rel="stylesheet" type="text/css" media="all" href="./styles/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         
         <title>OverAll</title>
 
@@ -78,7 +79,7 @@
             
             <div class="buscador_container">
                 <!-- BUSCADOR -->
-                <form class="buscador" action="">
+                <form class="buscador" action="#GET">
                     <label for="busqueda">Busca tu especialista</label>
                     <input type="text" name="busqueda" id="busqueda">
                     
@@ -230,7 +231,57 @@
         <!--Fin Main-->
         <!--Comienzo Footer-->
         <footer class="Footer" >
+            <div class="contenedor" >
+                <div class="information">
+                    <div class="inf-title">
+                        <h1>INFORMACIÓN</h1>
+                        <hr>
+                    </div>
+                <div class="inf-item">
+                    <ul>
+                        <li>Terminos y condiciones</li>
+                        <li>Politicas de privacidad</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Nuestro equipo</li>
+                        <li>Soporte</li>
+                    </ul>
+                </div>
+            </div>    
+                
+                <div class="redes">
+                    <div class="redes-title">
+                        <h1>REDES</h1>
+                        <hr>
+                    </div>
+                    <div class="redes-icon">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
 
+                    </div>
+                
+                </div>
+                <div class="contact">
+                    <div class ="contact-title">
+                        <h1>¿TIENES PREGUNTAS? ¡CONTACTANOS!</h1>
+                        <hr>
+                    </div>
+                    <div class="formulario">
+                        <section class="form-register">
+                            <p>Nombre</p>
+                            <input class="controls" type="text" name="name" id="name" >
+                            <p>Correo</p>
+                            <input class="controls" type="email" name="email" id="email">
+                            <p>Consulta</p>
+                            <input class="controls" type="text" name="consulta" id="consulta">
+                            <input class="boton" type="submit" value="ENVIAR">
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy;2024 Overall ARGENTINA</p>
+            </div>
         </footer>
         <!--Fin Footer-->
         <script type="module" src="./src/app.js" ></script>
