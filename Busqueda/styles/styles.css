@@ -46,6 +46,7 @@ nav{
     padding: 5px;
     color: white;
     background-color: #243A69;
+    width: 100%;
 }
 .logo{
     grid-column: 1/4;
@@ -90,14 +91,16 @@ nav{
 
 .container-search{
     display: flex;
+    justify-content: space-between;
     margin: 1.5rem;
-    gap: 5rem;
 }
+
 
 .btn-search i {
     display: flex;
 	font-size: 1.5rem;
     border-radius: 50px;
+
 }
 
 .search-form {
@@ -108,6 +111,7 @@ nav{
 	border-radius: 2rem;
 	background-color: #fafafa;
 	height: 3rem;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -115,7 +119,7 @@ nav{
 	outline: none;
 	font-family: inherit;
 	border: none;
-    width: 48rem;
+    width: 95%;
 	font-size: 1.2rem;
 	padding: 0 2rem;
 	color: #777;
@@ -123,8 +127,8 @@ nav{
 }
 
 .search-form .btn-search {
+    background-color: #ffffff;
 	border: none;
-	background-color: var(--primary-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -228,7 +232,16 @@ nav{
 }
 
 .conteiner-info{
-    width: 880px;
+    width: 77%;
+}
+
+.card-profesional section {
+    width: 18%;
+}
+
+.img-profesional{
+    width: 5%;
+    height: 5%;
 }
 
 .conteiner-info .text{
@@ -253,21 +266,19 @@ nav{
 }
 
 .conteiner-info h2{
+    display: flex;
+    align-items: center;
     margin-left: 5px;
-    font-size: 26px;
+    font-size: 22px;
     color: #000000;
 }
 
-.nombre-stars {
-    display: flex;
-    width: 550px;
-    height: 40px;
-    gap: 10px;
-}
+
 
 .consulta {
     display: flex;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     justify-content: flex-end;
     align-items: end;
 }
@@ -277,7 +288,6 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    width: 150px;
     height: 25px;
     color: #f3f3f3;
     font-size: 16px;
@@ -290,23 +300,32 @@ nav{
 
 .consulta button:hover{
     background-color: #E87A00;
+
 }
 
-.nombre-stars .fa-star{
+.nombre-stars {
+    display: flex;
+    width: 60%;
+    height: 50px;
+}
+
+.star-act{
     display: flex;
     align-items: center;
-    color: #D9D9D9;
-}
-
-.nombre-stars .fa-star:hover{
     color: #E87A00;
 }
+.star-inact{
+    display: flex;
+    align-items: center;
+    color: #D9D9D9 ;
+
+}
+
 
 .card-profesional .fa-heart{
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 250px;
     color: #D9D9D9;
 }
 
@@ -314,10 +333,7 @@ nav{
     color: #000000;
 }
 
-.img-profesional{
-    width: 55px;
-    height: 55px;
-}
+
 
 
 
