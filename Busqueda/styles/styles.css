@@ -221,6 +221,7 @@ nav{
 .card-profesional {
     display: flex;
     box-shadow: 2px 2px 2px 1px #969292;
+    
     border-radius: 20px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
