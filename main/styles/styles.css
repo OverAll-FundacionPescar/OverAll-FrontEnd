@@ -31,7 +31,7 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
-    background-color: #E1EBED;
+    /* background-color: #E1EBED; */
     min-height: 100vh;
 }
 
@@ -47,7 +47,7 @@ nav{
     
     padding: 5px;
     color: white;
-    background-color: #025959;
+    background-color: #243A69;
 }
 .logo{
     grid-column: 1/4;
@@ -64,8 +64,8 @@ nav{
     color: aqua;
 }
 .logo img{
-    border-radius: 50px;
-    width: 55px;
+    border-radius:100px;
+    width: 70px;
     padding: 3px;
 }
 .user{
@@ -157,16 +157,21 @@ nav{
 /* CONTENIDO PRINCIPAL, RECOMENDADOS, RESEÑAS, PROYECTO Y EQUIPO */
 .Main{
     grid-row: 3 / 5;
-    grid-column: 2/12;
+    grid-column: 1/13;
     
 }
 .Main article h2{
     font-family: 'Piazzolla';
     text-align: center;
-    margin: 100px;
+    margin-bottom: 100px;
     font-size: 2.3rem;
     text-decoration: underline;
+    color: white;
 
+}
+.Recomendados{
+    background-color: #24508F;
+    padding: 100px;
 }
 .Recomendados section {
     display: flex;
@@ -174,6 +179,7 @@ nav{
     gap: 30px;
 }
 .recomendados-card{
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -201,10 +207,13 @@ nav{
 }
 .profile img{
     border-radius: 100px;
+    
 
 }
-.recomendados-profile{
+.recomendados-profile img{
     width: 60px;
+    border-radius: 30px;
+    border: 1px grey solid;
 }
 .recomendados-title{
     font-size: 1.2rem;
@@ -213,6 +222,22 @@ nav{
     color: grey;
     padding-left: 15px;
 }
+.testimonios-title{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+.testimonios-title h3{
+    font-size: 2.5rem;
+}
+.testimonios-title p{
+    font-size: 1.5rem;
+}
+
 
 .opcontainer section{
     display: flex;
@@ -220,11 +245,13 @@ nav{
     gap: 35px;
 }
 .opiniones{
-    background-color: white;
+    text-align: center;
+    background-color: #FFF8F8;
     border-radius: 25px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
     width: 300px;
@@ -287,7 +314,7 @@ nav{
 footer{
     grid-row: 5/5;
     grid-column: 1/13;
-    background-color: #025959;
+    background-color: #24508F;
     padding:20px 0;
     color: #fff;
     width:1903px;
