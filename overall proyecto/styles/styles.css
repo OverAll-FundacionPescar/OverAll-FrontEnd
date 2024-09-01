@@ -1,0 +1,148 @@
+/*Fuente de Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
+
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.piazzolla{
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 100 900;
+}
+
+/* Reseteo de propiedades */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Regla para que siempre tenga el 100 del contenedor osea el figure */
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    font-family: "Stardos Stencil";
+}
+body{
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 6;
+    background-color: #E1EBED;
+}
+
+
+
+
+
+/* Estilos de todo el nav, ordenado en grillas */
+nav{
+    grid-column: 1/13;
+    grid-row: 1;
+    display: grid;
+    
+    padding: 5px;
+    color: white;
+    background-color: #243A69;
+}
+.logo{
+    grid-column: 1/4;
+    display: flex;
+}
+.logo a{
+    align-self: center;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: aqua;
+}
+.logo img{
+    border-radius: 50px;
+    width: 60px;
+    padding: 3px;
+}
+.user{
+    grid-column: 13/13;
+    display: flex;
+    justify-content:center;
+    
+}
+.user a{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border: none;
+}
+
+.menu_list ul a{
+    color: black;
+    text-decoration: none;
+}
+/* Fin de estilos del nav */
+/*comienzo de cabecera*/
+h1{
+    padding: 20px; 
+
+
+}
+
+/*Comienzo del main*/
+.container{
+    width: 90%; 
+    margin: 100px auto;
+}
+.container-faq{
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .1);
+    padding: 30px;
+}
+.container-faq .tittle-flaq{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.container-faq .item-faq{
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.container-faq .item-faq .preguntas{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(43, 51, 122, .2);
+    padding: 20px 20px 20px 80px;
+}
+.container-faq .item-faq .preguntas .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.container-faq .item-faq .preguntas .more:hover{
+    box-shadow: 0 0 15px -1px black;
+}
+.container-faq .item-faq .preguntas span{
+    position: absolute;
+    left: 25px;
+    font-size: 3rem;
+    top: 2px;
+}
+.container-faq .item-faq .respuesta{
+    padding: 0 20px 0 50px;
+    overflow: hidden;
+    height: 0;
+    transform: .4s;
+}
+
+
