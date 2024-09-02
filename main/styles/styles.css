@@ -12,12 +12,13 @@
     font-style: normal;
     font-weight: 100 900;
 }
-
-/* Reseteo de propiedades */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    min-width: 700px;
 }
 /* Regla para que siempre tenga el 100 del contenedor osea el figure */
 img{
@@ -27,30 +28,16 @@ img{
 a{
     font-family: "Stardos Stencil";
 }
-body{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 6;
-    /* background-color: #E1EBED; */
-    min-height: 100vh;
-}
 
 
-
-
-
-/* Estilos de todo el nav, ordenado en grillas */
 nav{
-    grid-column: 1/13;
-    grid-row: 1;
-    display: grid;
-    
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
     color: white;
     background-color: #243A69;
 }
 .logo{
-    grid-column: 1/4;
     display: flex;
 }
 .logo a{
@@ -69,7 +56,7 @@ nav{
     padding: 3px;
 }
 .user{
-    grid-column: 13/13;
+    
     display: flex;
     justify-content:center;
     
@@ -101,16 +88,11 @@ nav{
     color: black;
     text-decoration: none;
 }
-/* Fin de estilos del nav */
-
-
-
-/* Nav con buscador y filtros */
+/*NAV*/
+/* HEADER */
 .Header{
     
-    grid-column: 1/13;
     
-    grid-row: 2;
     height: 600px;
     
     background-image: url(assets/FondoHeader.jpeg);
@@ -120,9 +102,6 @@ nav{
 
     display: flex;
     justify-content: center;
-}
-.buscador_container{
-    width: 100;
 }
 
 .Header .buscador{
@@ -135,7 +114,7 @@ nav{
 .buscador label{
     margin-top: 130px;
     margin-bottom: 15px;
-    margin-left: 20px;
+    
     font-size: 1.5rem;
     font-family: 'Piazzolla';
 }
@@ -143,8 +122,7 @@ nav{
     border: grey solid 2px;
     padding: 10px;
     border-radius: 20px;
-    min-width: 800px;
-    overflow: hidden;
+    min-width: 450px;
     height: 40px;
 }
 .filtros{
@@ -154,12 +132,9 @@ nav{
     
 }
 
-/* CONTENIDO PRINCIPAL, RECOMENDADOS, RESEÑAS, PROYECTO Y EQUIPO */
-.Main{
-    grid-row: 3 / 5;
-    grid-column: 1/13;
-    
-}
+/* HEADER */
+
+/* Main */
 .Main article h2{
     font-family: 'Piazzolla';
     text-align: center;
@@ -176,6 +151,7 @@ nav{
 .Recomendados section {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .recomendados-card{
@@ -241,6 +217,8 @@ nav{
 
 .opcontainer section{
     display: flex;
+    flex-wrap: wrap;
+    
     justify-content: center;
     gap: 35px;
 }
@@ -254,7 +232,7 @@ nav{
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    width: 300px;
+    max-width: 300px;
     height: fit-content;
     border: 1px solid gray;
     gap: 20px;
@@ -276,6 +254,7 @@ nav{
 
 .about-content{
     margin-top: 10px;
+    padding-left: 50px;
     display: flex;
     align-items:start;
     flex-direction: column;
@@ -311,20 +290,21 @@ nav{
     font-family: 'Piazzolla';
 }
 
+/* Main */
+
+/* Footer */
 footer{
-    grid-row: 5/5;
-    grid-column: 1/13;
+    
     background-color: #24508F;
     padding:20px 0;
     color: #fff;
-    width:1903px;
-    height:956px;
+    width: 100%;
+    
     
 }
 
 .contenedor{
-    grid-column: 1/13;
-    grid-row:1/6;
+    
     display:flex;
     justify-content: space-between;
     padding: 50px;
@@ -332,7 +312,7 @@ footer{
 
 .information{
     width: 497px;
-    height: 516px;
+    
 }
 
 
@@ -369,26 +349,26 @@ footer{
     color: #fff;
     text-decoration: none;
 }
-
+.inf-title, .redes-title, .contact-title{
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
 
 .redes{
     width:448px;
-    height:211px;
+    
 }
 .redes-icon{
     color: #fff;
 }
 .contact{
     width:448px;
-    height:770px;
+    
 }
 .copyright {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
-
-
-
-
-
+/* Footer */
