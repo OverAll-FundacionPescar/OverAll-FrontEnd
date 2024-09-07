@@ -31,6 +31,8 @@ a{
 
 
 nav{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 5px;
@@ -69,8 +71,9 @@ nav{
     border: none;
 }
 .user_menu{ 
+    display: none;
     position: absolute;
-    top: 60px; left: 83%;
+    top: 60px; left: 90%;
 }
 .menu_list{
     display: flex;
