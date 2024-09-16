@@ -1,0 +1,303 @@
+.stardos-stencil-regular {
+    font-family: "Stardos Stencil", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.piazzolla{
+    font-family: 'Piazzolla';
+    font-style: normal;
+    font-weight: 100 900;
+}
+
+figure{
+    margin: 5px;
+}
+
+/* Regla para que siempre tenga el 100 del contenedor osea el figure */
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    font-family: "Stardos Stencil";
+}
+body{
+    background-color: #E1EBED;
+}
+
+
+
+
+/* Estilos de todo el nav, ordenado en grillas */
+nav{
+    grid-column: 1/13;
+    grid-row: 1;
+    display: grid;
+    padding: 0px;
+    color: white;
+    background-color: #243A69;
+}
+.logo{
+    grid-column: 1/4;
+    display: flex;
+}
+.logo a{
+    align-self: center;
+    font-size: 30px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #E87A00;
+}
+.logo img{
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+}
+.user{
+    grid-column: 13/13;
+    display: flex;
+    justify-content:center;
+    
+}
+.user a{
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    border: none;
+}
+.user_menu{ 
+    position: absolute;
+    top: 60px; left: 83%;
+}
+
+
+
+
+
+.perfil-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.perfil1{ /* Comienzo de los estilos de la primera seccion*/
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 400px ;
+    height: 900px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+.perfil1 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.perfil1 h1{
+    font-size:28px;
+}
+
+.perfil1 i{
+    color: #D9D9D9;
+    margin: 5px;
+}
+.perfil1 .fa-solid:hover{
+    color:#E87A00
+}
+.perfil1 .datos-personales{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 35px;
+    font-weight: bold;
+}
+.perfil-info{
+    font-size: 18px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left:35px ;
+}
+.perfil-info div{
+    display: flex;
+    align-items: center;
+}
+.perfil-info div i {
+    margin-right: 15px;
+    color: #ff5900;
+}
+
+.perfil1 .datos-contacto{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 35px;
+    font-weight: bold;
+
+}
+.perfil-contact{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.perfil-contact div{
+    display: flex;
+    align-items: center;
+
+}
+.perfil-contact div i {
+    margin-right: 15px;
+    color: #ff5900;
+}
+
+/* Fin de la primera seccion*/
+
+
+
+
+.perfil2{ /* Comienzo de la segunda seccion*/ 
+    background-color: white;
+    color: rgb(71, 65, 65);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 1200px ;
+    height: 900px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+
+.nav-usuario{
+    background-color: #E1EBED;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav-usuario button{
+    background-color:white;
+    color: rgb(88, 83, 83);
+    width: 500px;
+    height: 50px;
+    border-style: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.nav-usuario button:hover{
+    background-color: #E87A00;
+    color: white;
+}
+.img-trabajo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    margin-top: 90px;
+}
+.img-trabajo img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: all 300ms;
+    position: relative;
+    
+}
+
+.img-trabajo img:hover{
+    transform: scale(1.25);
+}
+
+/* Comienzo de la seccion de reputacion*/
+.reputacion{
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    width:auto;
+    height: auto;
+    border-radius: 20px;
+    padding:5px;
+    margin: 30px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
+}
+.opiniones h1{
+    color: #716d6d;
+    font-size: 35px;
+    text-align:center;
+    margin-left:80px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-profesional{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 50px;
+    
+}
+.img-profesional img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.nombre-usuario-opinion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nombre-usuario-opinion h2{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.nombre-usuario-opinion i {
+    margin-right: 10px;
+    color: #D9D9D9;
+} 
+.nombre-usuario-opinion .fa-solid:hover{
+    color: #E87A00;
+}
+.conteiner-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conteiner-info .text-opinion{
+    font-size: 18px;
+    margin-top: 0px;
+}
+.conteiner-info .text-tiempo{
+    font-size: 14px;
+    color: #716d6d;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+
