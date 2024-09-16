@@ -295,83 +295,131 @@ nav{
 
 /* Main */
 
-/* Footer */
-footer{
-    
-    background-color: #24508F;
-    padding:20px 0;
-    color: #fff;
-    width: 100%;
-    
-    
+/* Estilos para el footer */
+footer {
+    background-color: #243A69;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
 }
 
-.contenedor{
-    
-    display:flex;
-    justify-content: space-between;
-    padding: 50px;
-}
-
-.information{
-    width: 497px;
-    
-}
-
-
-.information h3 {
-    display : flex;
-    justify-content: center;
-    border-bottom: 1px solid #f80606;
-    padding-bottom: 10px;
-}
-.redes h3{
-    display : flex;
-    justify-content: center;
-    border-bottom: 1px solid #f80606;
-    padding-bottom: 10px;
-}
-.contact h3 {
-    display : flex;
-    justify-content: center;
-    border-bottom: 1px solid #f80606;
-    padding-bottom: 10px;
-}
-
-.information ul {
+.footer-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.footer-info, .footer-social, .footer-contact {
+    width: 30%;
+    height: 30%;
+}
+
+.footer-info h4, .footer-social h4, .footer-contact h4 {
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center; /* Centra el texto de los títulos */
+    position: relative; /* Necesario para colocar la línea correctamente */
+    
+}
+.footer-info h4::after, .footer-social h4::after, .footer-contact h4::after {
+    content: "";
+    display: block;
+    width: 90%; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 10px auto 0; /* Espaciado entre el título y la línea */
+}
+
+.footer-info ul {
+    list-style:none;
     padding: 0;
+    margin: 10px;
+    align-items: flex-start;
 }
 
-.information li {
-    margin: 10px 0;
+.footer-info li {
+    margin-bottom: 10px;
 }
 
-.information a {
-    color: #fff;
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para redes sociales */
+
+.footer-social{
+    text-align: center; /* Centra el contenido de la sección de redes */
+
+}
+.footer-social a {
+    display:inline-block;
+    color: white;
+    font-size: 50px;
+    margin: auto 15px;
     text-decoration: none;
 }
-.inf-title, .redes-title, .contact-title{
-    border-bottom: 1px solid white;
-    width: fit-content;
+
+.footer-social a:hover {
+    color: #ccc;
 }
 
-.redes{
-    width:448px;
-    
+/* Estilos para el formulario */
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
 }
-.redes-icon{
-    color: #fff;
+
+.footer-contact input, .footer-contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
 }
-.contact{
-    width:448px;
-    
+
+.footer-contact input::placeholder, .footer-contact textarea::placeholder {
+    font-size: 14px;
 }
-.copyright {
+
+.footer-contact button {
+    background-color: #24508F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    width: 81%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-contact button:hover {
+    background-color: #3A4D6B;
+}
+
+/* Estilos para el copyright */
+.footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
 }
 
 /* Footer */
