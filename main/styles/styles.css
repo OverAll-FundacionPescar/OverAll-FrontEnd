@@ -61,7 +61,7 @@ nav{
     text-decoration: none;
 }
 .logo a:hover{
-    color: aqua;
+    color: #E87A00;
 }
 .logo img{
     border-radius:100px;
@@ -105,8 +105,6 @@ nav{
 /*NAV*/
 /* HEADER */
 .Header{
-    
-    
     height: 600px;
     
     background-image: url(assets/FondoHeader.jpeg);
@@ -118,14 +116,22 @@ nav{
     justify-content: center;
 }
 
+.buscador_container{
+    min-width: 40%;
+}
+
 .Header .buscador{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    
+    align-items: center;
 }
-.buscador label{
+
+.buscador{
+    border: grey solid 2px;
+	border-radius: 2rem;
+	background-color: #fafafa;
+    overflow: hidden;
+}
+.buscador_container label{
     display: flex;
     justify-content: center;
     margin-top: 130px;
@@ -136,25 +142,52 @@ nav{
     color: rgb(70, 68, 68);
 }
 .buscador input{
-    border: grey solid 2px;
+    border: none;
+    outline: none;
     padding: 10px;
     border-radius: 20px;
     min-width: 450px;
+    width: 100%;
     height: 40px;
+    cursor: pointer;
 }
+
+.btn-search {
+    display: flex;
+	font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #fafafa;
+}
+
 .filtros{
-    margin-top: 12px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    background-color:  #d3d3d35e;
+    padding: 10px;
+    border-radius: 50px;
 }
 
 .filtros i{
     color: #E8810E;
     font-size: 42px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
+.filtros a{
+    text-decoration: none;
+}
+
+.filtros figcaption{
+    color: black;
+    font-family: "roboto";
+    font-size: 0.8rem;
+}
 
 /* HEADER */
 

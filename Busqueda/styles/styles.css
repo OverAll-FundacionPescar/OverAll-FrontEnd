@@ -131,12 +131,13 @@ nav{
     width: 95%;
 	font-size: 1.2rem;
 	padding: 0 2rem;
-	color: #777;
+	color: #000000;
+    background-color: #fafafa;
 	cursor: pointer;
 }
 
 .search-form .btn-search {
-    background-color: #ffffff;
+    background-color: #fafafa;
 	border: none;
 	display: flex;
 	align-items: center;
@@ -150,22 +151,22 @@ nav{
 .container-filtro{
     font-family: 'roboto';
     display: flex;
+    justify-content: center;
     background-color: #ffffff;
 	border: 2px solid #867f7f;
-    padding: 10px;
+    padding: 0.5rem;
     gap: 1rem;
 }
 
 .localidad{
-    width: 150px;
+    width: 90%;
     border-left: 2px solid #867f7f;
 }
 
 .text-title{
-    font-size: 16px;
+    font-size: 1rem;
     color: #000000;
     margin: 2rem;
-    margin-bottom: 30rem;
 }
 
 .list-items{
@@ -236,7 +237,7 @@ nav{
 .card-profesional {
     display: flex;
     box-shadow: 2px 2px 2px 1px #969292;
-    
+    justify-content: space-between;
     border-radius: 20px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -256,6 +257,9 @@ nav{
     height: 5%;
 }
 
+section{
+    width: 100%;
+}
 .conteiner-info .text{
     font-size: 18px;
     margin-bottom: 2rem;
