@@ -1,6 +1,8 @@
 /*Fuente de Logo*/
 @import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 .stardos-stencil-regular {
     font-family: "Stardos Stencil", system-ui;
@@ -12,6 +14,13 @@
     font-style: normal;
     font-weight: 100 900;
 }
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -43,6 +52,8 @@ nav{
     display: flex;
 }
 .logo a{
+    font-family: "piazzola";
+    font-weight: bold;
     align-self: center;
     font-size: 30px;
     margin: 5px;
@@ -115,11 +126,14 @@ nav{
     
 }
 .buscador label{
+    display: flex;
+    justify-content: center;
     margin-top: 130px;
     margin-bottom: 15px;
-    
-    font-size: 1.5rem;
-    font-family: 'Piazzolla';
+    font-family: 'roboto';
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: rgb(70, 68, 68);
 }
 .buscador input{
     border: grey solid 2px;
@@ -129,32 +143,39 @@ nav{
     height: 40px;
 }
 .filtros{
+    margin-top: 12px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    align-items: center;
 }
+
+.filtros i{
+    color: #E8810E;
+    font-size: 42px;
+}
+
 
 /* HEADER */
 
 /* Main */
 .Main article h2{
     font-family: 'Piazzolla';
-    text-align: center;
-    margin-bottom: 100px;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+    font-family: 'roboto';
     font-size: 2.3rem;
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 
 }
 .Recomendados{
-    background-color: #24508F;
-    padding: 100px;
+    background-color: #455873;
+    padding: 50px;
 }
 .Recomendados section {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 30px;
 }
 .recomendados-card{
@@ -195,6 +216,7 @@ nav{
     border: 1px grey solid;
 }
 .recomendados-title{
+    font-family: "roboto";
     font-size: 1.2rem;
 }
 .recomendados-sub{
@@ -203,18 +225,23 @@ nav{
 }
 .testimonios-title{
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     margin-left: 160px;
+    font-family: "roboto";
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: start;
 }
 .testimonios-title h3{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    color: #3E3D3D;
+
 }
 .testimonios-title p{
     font-size: 1.5rem;
+    padding: 15px;
+    color: #3E3D3D;
 }
 
 
@@ -237,7 +264,8 @@ nav{
     align-items: center;
     max-width: 300px;
     height: fit-content;
-    border: 1px solid gray;
+    font-family: "roboto";
+    box-shadow: 0px 2px 4px #b1a4a4;
     gap: 20px;
 }
 .opiniones h6{
@@ -245,6 +273,34 @@ nav{
 }
 .opiniones figure{
     width: 80px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24508F;
+    margin-top: 20px;
+}
+
+.about-us h3{
+    font-family: 'roboto';
+    text-align: center;
+    padding: 80px;
+    font-size: 2.8rem;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 80%;
+    text-decoration: none;
+}
+
+.about-us figure{
+    display: flex;
+    width: auto;
+    height: 50%;
+    object-fit: contain;
+    align-items: flex-end;
+
 }
 
 .about{
@@ -257,20 +313,19 @@ nav{
 
 .about-content{
     margin-top: 10px;
-    padding-left: 50px;
+    padding-left: 25%;
     display: flex;
     align-items:start;
     flex-direction: column;
+    place-content: center;
     gap: 30px;
 }
-.about-content h3{
-    font-family: 'Piazzolla';
-    text-align: center;
-    font-size: 2.3rem;
-    text-decoration: underline;
-}
+
 .about-content p{
+    font-family: 'roboto';
     font-size: 1.6rem;
+    color: #243A69;
+    font-weight: bolder;
 }
 
 
@@ -278,19 +333,19 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     gap: 35px;
 }
 .team-container img{
     width: 252px;
     height: 272px;
-    border: 5px solid #025959;
     border-radius: 13px;
 
 }
 .team-container figcaption{
     text-align: center;
     font-size: 1.4rem;
-    font-family: 'Piazzolla';
+    font-family: 'roboto';
 }
 
 /* Main */
@@ -307,6 +362,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    font-family: 'roboto';
     max-width: 1400px;
     margin: 50px auto;
 }

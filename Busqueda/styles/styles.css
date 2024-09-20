@@ -1,5 +1,5 @@
 /*Fuente de Logo*/
-@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&family=Stardos+Stencil:wght@400;700&display=swap');
 
 .stardos-stencil-regular {
@@ -12,6 +12,12 @@
     font-style: normal;
     font-weight: 100 900;
 }
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}  
 
 /* Reseteo de propiedades */
 *{
@@ -53,6 +59,8 @@ nav{
     display: flex;
 }
 .logo a{
+    font-family: "piazzola";
+    font-weight: bold;
     align-self: center;
     font-size: 30px;
     margin: 5px;
@@ -104,6 +112,7 @@ nav{
 }
 
 .search-form {
+    font-family: 'roboto';
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -139,6 +148,7 @@ nav{
 
 /*Estilo del CHECKBOX*/
 .container-filtro{
+    font-family: 'roboto';
     display: flex;
     background-color: #ffffff;
 	border: 2px solid #867f7f;
@@ -217,6 +227,7 @@ nav{
     margin: 1.5rem;
     border-radius: 20px;
     justify-content: center;
+    font-family: 'roboto';
     
 }
 
@@ -335,7 +346,135 @@ nav{
 }
 
 
+/* Estilos para el footer */
+footer {
+    background-color: #243A69;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 50px auto;
+    font-family: 'roboto';
+}
+
+.footer-info, .footer-social, .footer-contact {
+    width: 30%;
+    height: 30%;
+}
+
+.footer-info h4, .footer-social h4, .footer-contact h4 {
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center; /* Centra el texto de los títulos */
+    position: relative; /* Necesario para colocar la línea correctamente */
+    
+}
+.footer-info h4::after, .footer-social h4::after, .footer-contact h4::after {
+    content: "";
+    display: block;
+    width: 90%; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 10px auto 0; /* Espaciado entre el título y la línea */
+}
+
+.footer-info ul {
+    list-style:none;
+    padding: 0;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.footer-info li {
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para redes sociales */
+
+.footer-social{
+    text-align: center; /* Centra el contenido de la sección de redes */
+
+}
+.footer-social a {
+    display:inline-block;
+    color: white;
+    font-size: 50px;
+    margin: auto 15px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+/* Estilos para el formulario */
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact input, .footer-contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-contact input::placeholder, .footer-contact textarea::placeholder {
+    font-size: 14px;
+}
+
+.footer-contact button {
+    background-color: #24508F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    width: 81%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-contact button:hover {
+    background-color: #3A4D6B;
+}
+
+/* Estilos para el copyright */
+.footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Footer */
 
 
 
