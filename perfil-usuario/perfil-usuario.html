@@ -27,7 +27,10 @@
             </a>
         </div>
     </nav>
+    <!--Fin del nav-->
 
+
+    <!--Comienzo de las secciones-->
     <section class="perfil-container"> 
         <div class="perfil1"> <!--seccion de los datos personales del usuario-->
                 <img src="imagenes/mecanico.png" alt="perfil del usuario">
@@ -56,36 +59,66 @@
 
 
         <div class="perfil2"> <!--seccion de experencia del usuario-->
-            <div class="nav-usuario">
-                <button >Descripcion</button>
-                <button >Mis trabajos</button>
-                <button>Estudios</button>
+            <div class="tab_box">
+                <button class="tab_btn active" >Descripcion</button>
+                <button class="tab_btn">Mis trabajos</button>
+                <button class="tab_btn">Estudios</button>
             </div>
-            
-            <div class="img-trabajo">
-                <img src="imagenes/trabajo1.jpg" alt="">
-                <img src="imagenes/trabajo2.jpg" alt="">
-                <img src="imagenes/trabajo3.jpg" alt="">
-                <img src="imagenes/trabajo4.jpg" alt="">
-                <img src="imagenes/trabajo5.jpg" alt="">
-                <img src="imagenes/trabajo6.jpg" alt="">
-                <img src="imagenes/trabajo -mecanico-3.jpg" alt="">
-                <img src="imagenes/trabajo4.jpg" alt="">
+
+            <div class="content_box">
+
+                <div class="content active">
+                    <h2>Descripcion</h2>
+                    <p class="info-tab">
+                        Hola, mi nombre es Luis Dominguez, y soy un electricista especializado con más de 10 años de experiencia en el campo de la electricidad. A lo largo de mi carrera, he tenido la oportunidad de trabajar en una variedad de proyectos, desde pequeñas reparaciones domésticas hasta grandes instalaciones industriales
+                    </p>
+                    <h2>Experiencia Laboral :</h2>
+                </div>
+                <div class="content">
+                    <img src="imagenes/trabajo1.jpg" alt="">
+                    <img src="imagenes/trabajo2.jpg" alt="">
+                    <img src="imagenes/trabajo3.jpg" alt="">
+                    <img src="imagenes/trabajo4.jpg" alt="">
+                    <img src="imagenes/trabajo5.jpg" alt="">
+                    <img src="imagenes/trabajo6.jpg" alt="">
+                    <img src="imagenes/trabajo -mecanico-3.jpg" alt="">
+                    <img src="imagenes/trabajo4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Estudios</h2>
+
+                    <p>
+                        Curso de Instalaciones Eléctricas Residenciales y Comerciales:
+                        Instituto Técnico de Electricidad
+                        Año de finalización: [Año]
+                        Descripción: Formación intensiva en la instalación, mantenimiento y reparación de sistemas eléctricos en viviendas y establecimientos comerciales, incluyendo la interpretación de planos y la conexión de dispositivos.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+    <script>
+        const tabs = document.querySelectorAll('.tab_btn');
+        const all_content= document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index)=>{
+            tab.addEventListener('click', ()=>{
+                tabs.forEach(tab=>{tab.classList.remove('active')});
+                tab.classList.add('active');
+            
+            all_content.forEach(content=>{content.classList.remove('active')});
+            all_content[index].classList.add('active');
+            })    
+    })
+    </script>
+
+    <!-- Fin de la seccion 2 -->
+
 
 
     <section class="reputacion"> <!-- Comienzo de la seccion de opiniones-->
         <div class="opiniones">
-            <h1>Experiencia de los usuarios</h1>
-            <i class="fa-solid fa-star fa-2xl"></i>
-            <i class="fa-solid fa-star fa-2xl"></i>
-            <i class="fa-solid fa-star fa-2xl"></i>
-            <i class="fa-solid fa-star fa-2xl"></i>
-            <i class="fa-solid fa-star fa-2xl"></i>
-
-    
+            <h1>Comentarios</h1>
         </div>
         
 
@@ -108,7 +141,6 @@
 
             <p class="text-opinion">Excelente servicio, respuesta rapida</p>
             <h4 class="text-tiempo">Hace 2 semanas</h4>
-
             </div>
         </article>
         <article class="card-profesional">
@@ -132,6 +164,7 @@
 
             </div>
         </article>
+
         <article class="card-profesional">
             <figure class="img-profesional">
                 <img src="imagenes/silvia_opinion.jpg" alt="foto-especialista">
@@ -174,7 +207,46 @@
 
             </div>
         </div>
-        </article>
+    </article>
     </section>
+
+
+
+    <!--Comienzo de Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Sección de Información -->
+            <div class="footer-info">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Nuestro equipo</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sección de Redes Sociales -->
+            <div class="footer-social">
+                <h4>REDES</h4>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+    
+            <!-- Sección de Formulario -->
+            <div class="footer-contact">
+                <h4>¿DUDAS? ¡CONTANOS!</h4>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Nombre">
+                    <input type="email" id="email" name="email" placeholder="Correo">
+                    <textarea id="message" name="message" placeholder="Consulta"></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer-copyright">© Copyright 2024 Overall Argentina</p>
+    </footer>
 </body>
 </html>

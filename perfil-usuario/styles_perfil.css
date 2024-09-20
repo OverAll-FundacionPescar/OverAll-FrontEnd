@@ -22,23 +22,24 @@ a{
     font-family: "Stardos Stencil";
 }
 body{
-    background-color: #E1EBED;
+    background-color:rgb(241, 241, 246);
+    margin:0px
 }
 
 
 
 
-/* Estilos de todo el nav, ordenado en grillas */
+/* Estilos de todo el nav*/
 nav{
-    grid-column: 1/13;
-    grid-row: 1;
-    display: grid;
-    padding: 0px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
     color: white;
     background-color: #243A69;
 }
 .logo{
-    grid-column: 1/4;
     display: flex;
 }
 .logo a{
@@ -53,12 +54,11 @@ nav{
 }
 .logo img{
     border-radius: 50px;
-    width: 60px;
-    height: 60px;
-    padding: 4px;
+    width: 70px;
+    height: 70px;
+    padding: 3px;
 }
 .user{
-    grid-column: 13/13;
     display: flex;
     justify-content:center;
     
@@ -70,7 +70,8 @@ nav{
     margin: 15px;
     border: none;
 }
-.user_menu{ 
+.user_menu{
+    display: none;
     position: absolute;
     top: 60px; left: 83%;
 }
@@ -82,8 +83,8 @@ nav{
 .perfil-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
 
 .perfil1{ /* Comienzo de los estilos de la primera seccion*/
@@ -91,8 +92,8 @@ nav{
     color: black;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    width: 400px ;
-    height: 900px;
+    width: 50vh ;
+    height: 120vh;
     margin-left: 20px;
     text-align: center;
     border-radius: 20px;
@@ -110,12 +111,10 @@ nav{
 }
 
 .perfil1 i{
-    color: #D9D9D9;
+    color: #E87A00;
     margin: 5px;
 }
-.perfil1 .fa-solid:hover{
-    color:#E87A00
-}
+
 .perfil1 .datos-personales{
     text-align: left;
     margin-top: 50px;
@@ -123,13 +122,17 @@ nav{
     font-weight: bold;
 }
 .perfil-info{
-    font-size: 18px;
+    font-size: 1em;
     font-weight: lighter;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-left:35px ;
+    margin-left: 25px ;
+}
+
+.perfil-info p {
+    margin: 15px
 }
 .perfil-info div{
     display: flex;
@@ -175,74 +178,97 @@ nav{
     color: rgb(71, 65, 65);
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    width: 1200px ;
+    width: 900px ;
     height: 900px;
     text-align: center;
     border-radius: 20px;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
 }
 
-.nav-usuario{
+.tab_box{
     background-color: #E1EBED;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nav-usuario button{
-    background-color:white;
+.tab_box .tab_btn{
+    font-size: 20px;
+    font-weight: 600;
     color: rgb(88, 83, 83);
+    background-color:white;
     width: 500px;
     height: 50px;
     border-style: none;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    font-size: 20px;
-    font-weight: 600;
+    cursor: pointer;
 
 }
 
-.nav-usuario button:hover{
-    background-color: #E87A00;
+.tab_box .tab_btn.active{
     color: white;
+    background-color: #E87A00;
 }
-.img-trabajo{
+
+.content_box .content{
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
-    margin-top: 90px;
-}
-.img-trabajo img{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    margin: 20px;
-    transition: all 300ms;
-    position: relative;
-    
+    justify-content: center;
+    padding: 20px 50px;
 }
 
-.img-trabajo img:hover{
-    transform: scale(1.25);
+.content_box .content{
+    display: none;
+    animation: moving .5s ease;
 }
+
+@keyframes moving{
+    from{transform: translateX(50px);opacity:0};
+    to{transform: translateX(0px);opacity:1}
+}
+
+.content_box .content.active{
+    display:block;
+}
+
+.content_box .content h2{
+    text-align: left;
+}
+
+.content_box .content p {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+
+.content_box .content img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.content_box .content img:hover{
+    transform:scale(1.25);
+}
+
+
 
 /* Comienzo de la seccion de reputacion*/
 .reputacion{
-    background-color: white;
     color: black;
     font-family: "Roboto", sans-serif;
     width:auto;
     height: auto;
-    border-radius: 20px;
     padding:5px;
     margin: 30px;
-    box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
 }
 .opiniones h1{
-    color: #716d6d;
-    font-size: 35px;
+    color: #000000;
+    font-size: 45px;
     text-align:center;
-    margin-left:80px;
     padding: 10px;
     margin-bottom: 50px;
 
@@ -256,16 +282,18 @@ nav{
 .card-profesional{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 90%;
     height: 100px;
     margin-bottom: 50px;
     
 }
 .img-profesional img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
-    margin: 20px;
+    margin-right: 50px;
+    margin-left: 80px;
 }
 .nombre-usuario-opinion{
     display: flex;
@@ -279,15 +307,14 @@ nav{
 
 .nombre-usuario-opinion i {
     margin-right: 10px;
-    color: #D9D9D9;
-} 
-.nombre-usuario-opinion .fa-solid:hover{
     color: #E87A00;
-}
+} 
+
 .conteiner-info{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
 }
 .conteiner-info .text-opinion{
     font-size: 18px;
@@ -300,4 +327,131 @@ nav{
     margin-top: 0px;
 }
 
+/* Estilos para el footer */
+footer {
+    background-color: #243A69;
+    color: white;
+    padding: 40px 0;
+    font-size: 30px;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.footer-info, .footer-social, .footer-contact {
+    width: 30%;
+    height: 30%;
+}
+
+.footer-info h4, .footer-social h4, .footer-contact h4 {
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center; /* Centra el texto de los títulos */
+    position: relative; /* Necesario para colocar la línea correctamente */
+    
+}
+.footer-info h4::after, .footer-social h4::after, .footer-contact h4::after {
+    content: "";
+    display: block;
+    width: 90%; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 10px auto 0; /* Espaciado entre el título y la línea */
+}
+
+.footer-info ul {
+    list-style:none;
+    padding: 0;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.footer-info li {
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para redes sociales */
+
+.footer-social{
+    text-align: center; /* Centra el contenido de la sección de redes */
+
+}
+.footer-social a {
+    display:inline-block;
+    color: white;
+    font-size: 50px;
+    margin: auto 15px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ccc;
+}
+
+/* Estilos para el formulario */
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact input, .footer-contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-contact input::placeholder, .footer-contact textarea::placeholder {
+    font-size: 14px;
+}
+
+.footer-contact button {
+    background-color: #24508F;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    align-self: center;
+    width: 81%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-contact button:hover {
+    background-color: #3A4D6B;
+}
+
+/* Estilos para el copyright */
+.footer-copyright {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+/* Footer */
