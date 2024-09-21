@@ -28,6 +28,8 @@ a{
     font-family: "Stardos Stencil";
 }
 body{
+    min-width: 700px;
+    height: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
     background-color: #E1EBED;
@@ -41,8 +43,7 @@ body{
 nav{
     grid-column: 1/13;
     grid-row: 1;
-    display: grid;
-    
+    display: grid;    
     padding: 5px;
     color: white;
     background-color: #243A69;
@@ -59,7 +60,7 @@ nav{
     text-decoration: none;
 }
 .logo a:hover{
-    color: aqua;
+    color: #E87A00;
 }
 .logo img{
     border-radius: 50px;

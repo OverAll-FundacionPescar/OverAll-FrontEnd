@@ -34,10 +34,8 @@ a{
     font-family: "Stardos Stencil";
 }
 body{
-
-
-
-
+    min-width: 700px;
+    height: 100%;
     background-color: #E1EBED;
 }
 
@@ -46,16 +44,14 @@ body{
 
 /* Estilos de todo el nav, ordenado en grillas */
 nav{
-    grid-column: 1/13;
-    grid-row: 1;
-    display: grid;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
     color: white;
     background-color: #243A69;
-    width: 100%;
 }
 .logo{
-    grid-column: 1/4;
     display: flex;
 }
 .logo a{
@@ -157,15 +153,16 @@ nav{
     padding: 0.5rem;
     gap: 1rem;
 }
-
-.localidad{
-    width: 90%;
+.localidad .especialistas{
+    max-width: 90%;
+}
+.localidad {   
     border-left: 2px solid #867f7f;
 }
 
 .text-title{
     font-size: 1rem;
-    color: #000000;
+    color: #2c2c2c;
     margin: 2rem;
 }
 
@@ -248,13 +245,14 @@ nav{
     width: 77%;
 }
 
+
 .card-profesional section {
     width: 18%;
 }
 
 .img-profesional{
-    width: 5%;
-    height: 5%;
+    width: 70px;
+    height: 70px;
 }
 
 section{
@@ -349,6 +347,92 @@ section{
     color: #000000;
 }
 
+/*reponsive */
+
+.menu-closer {
+	border: none;
+	display: flex;
+	align-items: center;
+    background-color: transparent;
+    color: #49454F;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-closer i {
+	font-size: 1.5rem;
+    padding: 0 15px;
+}
+
+#open{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        width: 100%;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    .container-filtro .menu-closer{
+        display: block;
+    }
+
+    .container-filtro{
+        background-color: #455873;
+        position: fixed;
+        display: block;
+        width: 100%;        
+        z-index: 100;
+        top: 150px;
+        left: -100%;        
+        transition: 0.5s;
+    }
+
+    .localidad {
+        border: none;
+    }
+
+    .localidad .especialistas{
+        display: block;
+        width: 100%;
+
+    }
+    .container-filtro .text-title {
+        display: flex;
+        justify-content: center;        
+        color: #ffffff;
+        padding: 0.2rem;
+        margin: 0;
+    }
+
+    .list-items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 10px 0px;
+    }
+    .search-form {
+        width: 100%;
+    }
+    
+    .menu-closer {
+        border: none;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        color: #49454F;
+        transition: 0.5s;
+    }  
+
+    #open:checked ~ .container-filtro{
+        left: 0;
+
+    }
+    
+}
 
 /* Estilos para el footer */
 footer {
@@ -362,9 +446,9 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    font-family: 'roboto';
     max-width: 1400px;
     margin: 50px auto;
-    font-family: 'roboto';
 }
 
 .footer-info, .footer-social, .footer-contact {
