@@ -282,7 +282,7 @@ nav{
 .opcontainer section{
     display: flex;
     flex-wrap: wrap;
-    height: 350px;
+    height: auto;
     
     justify-content: center;
     gap: 35px;
