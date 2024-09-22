@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    
     <link rel="stylesheet" href="styles_perfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/logo_overall.ico">
+    <title>Perfil</title>
 </head>
 <body class="body"> <!--Comienzo body-->
     <nav>
@@ -72,7 +74,13 @@
                     <p class="info-tab">
                         Hola, mi nombre es Luis Dominguez, y soy un electricista especializado con más de 10 años de experiencia en el campo de la electricidad. A lo largo de mi carrera, he tenido la oportunidad de trabajar en una variedad de proyectos, desde pequeñas reparaciones domésticas hasta grandes instalaciones industriales
                     </p>
-                    <h2>Experiencia Laboral :</h2>
+                    <h2>Experiencia Laboral</h2>
+                    <ul>
+                        <li> Mantenimiento Eléctrico Residencial e Industrial: Durante mis años de trabajo, he realizado mantenimiento preventivo y correctivo en sistemas eléctricos de hogares y fábricas. Esto incluye la inspección de cables, la reparación de circuitos y la actualización de instalaciones eléctricas para cumplir con las normativas vigentes.</li>
+                        <li>Instalación de Sistemas Eléctricos: He participado en la instalación completa de sistemas eléctricos en nuevas construcciones, tanto residenciales como comerciales. Esto incluye la planificación de rutas de cableado, la instalación de paneles eléctricos, y la conexión de electrodomésticos y maquinaria.</li>
+                        <li>Diagnóstico y Reparación de Averías: Una parte esencial de mi trabajo ha sido diagnosticar y reparar fallos eléctricos. Mi experiencia me ha permitido identificar rápidamente problemas en los sistemas eléctricos y aplicar las soluciones más eficaces para restablecer el funcionamiento</li>
+                        <li>Eficiencia Energética: En los últimos años, me he especializado en la implementación de soluciones para mejorar la eficiencia energética de los sistemas eléctricos. Esto incluye la instalación de sistemas de iluminación LED, la optimización del uso de energía en maquinaria industrial, y el asesoramiento sobre el uso eficiente de la electricidad.</li>
+                    </ul>
                 </div>
                 <div class="content">
                     <img src="imagenes/trabajo1.jpg" alt="">
@@ -81,36 +89,29 @@
                     <img src="imagenes/trabajo4.jpg" alt="">
                     <img src="imagenes/trabajo5.jpg" alt="">
                     <img src="imagenes/trabajo6.jpg" alt="">
-                    <img src="imagenes/trabajo -mecanico-3.jpg" alt="">
-                    <img src="imagenes/trabajo4.jpg" alt="">
                 </div>
                 <div class="content">
                     <h2>Estudios</h2>
 
-                    <p>
-                        Curso de Instalaciones Eléctricas Residenciales y Comerciales:
-                        Instituto Técnico de Electricidad
-                        Año de finalización: [Año]
-                        Descripción: Formación intensiva en la instalación, mantenimiento y reparación de sistemas eléctricos en viviendas y establecimientos comerciales, incluyendo la interpretación de planos y la conexión de dispositivos.
-                    </p>
+                    <ul>
+                        <li>Curso de Instalaciones Eléctricas Residenciales y Comerciales:
+                            Instituto Técnico de Electricidad
+                            Año de finalización: 2023
+                            Descripción: Formación intensiva en la instalación, mantenimiento y reparación de sistemas eléctricos en viviendas y establecimientos comerciales, incluyendo la interpretación de planos y la conexión de dispositivos.</li>
+                        <li>Capacitación en Sistemas de Energía Solar Fotovoltaica centro de Energías Renovables
+                            Año de finalización: 2021
+                            Descripción: Formación en la instalación y mantenimiento de sistemas de energía solar, incluyendo el dimensionamiento de sistemas fotovoltaicos y la integración con redes eléctricas existentes.</li>
+                        <li>Taller de Eficiencia Energética en Instalaciones Eléctricas
+                            Instituto de Energía Sostenible
+                            Año de finalización: 2018
+                            Descripción: Curso enfocado en la implementación de prácticas de eficiencia energética en sistemas eléctricos, con énfasis en la reducción del consumo energético y el uso de tecnologías sostenibles.</li>
+                        
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <script>
-        const tabs = document.querySelectorAll('.tab_btn');
-        const all_content= document.querySelectorAll('.content');
 
-        tabs.forEach((tab, index)=>{
-            tab.addEventListener('click', ()=>{
-                tabs.forEach(tab=>{tab.classList.remove('active')});
-                tab.classList.add('active');
-            
-            all_content.forEach(content=>{content.classList.remove('active')});
-            all_content[index].classList.add('active');
-            })    
-    })
-    </script>
 
     <!-- Fin de la seccion 2 -->
 
@@ -207,6 +208,9 @@
 
             </div>
         </div>
+        <div class="btn-comments">
+            <button>mas comentarios</button>
+        </div>
     </article>
     </section>
 
@@ -248,5 +252,10 @@
         </div>
         <p class="footer-copyright">© Copyright 2024 Overall Argentina</p>
     </footer>
+    <script type="module" src="perfil-script.js" ></script>
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+></script>
 </body>
 </html>

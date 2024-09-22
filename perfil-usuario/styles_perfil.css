@@ -4,7 +4,7 @@
     font-style: normal;
 }
 .piazzolla{
-    font-family: 'Piazzolla';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 100 900;
 }
@@ -19,7 +19,7 @@ img{
     height: 100%;
 }
 a{
-    font-family: "Stardos Stencil";
+    font-family: "Roboto";
 }
 body{
     background-color:rgb(241, 241, 246);
@@ -92,8 +92,8 @@ nav{
     color: black;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    width: 50vh ;
-    height: 120vh;
+    width: 60vh ;
+    height: auto;
     margin-left: 20px;
     text-align: center;
     border-radius: 20px;
@@ -107,7 +107,7 @@ nav{
 }
 
 .perfil1 h1{
-    font-size:28px;
+    font-size:2em;
 }
 
 .perfil1 i{
@@ -122,7 +122,7 @@ nav{
     font-weight: bold;
 }
 .perfil-info{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: lighter;
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ nav{
     flex-direction:column;
     justify-content:center;
     margin-left: 35px;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: lighter;
 }
 .perfil-contact div{
@@ -178,8 +178,8 @@ nav{
     color: rgb(71, 65, 65);
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    width: 900px ;
-    height: 900px;
+    width: 1000px ;
+    height: min-content;
     text-align: center;
     border-radius: 20px;
     box-shadow:0 0 10px rgba(0, 0, 0, 0.1) ;
@@ -193,7 +193,7 @@ nav{
 }
 
 .tab_box .tab_btn{
-    font-size: 20px;
+    font-size: 1.3em;
     font-weight: 600;
     color: rgb(88, 83, 83);
     background-color:white;
@@ -213,7 +213,7 @@ nav{
 
 .content_box .content{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
     padding: 20px 50px;
 }
@@ -234,17 +234,27 @@ nav{
 
 .content_box .content h2{
     text-align: left;
+    font-size: 1.5em;
 }
 
 .content_box .content p {
     text-align: justify;
-    margin-bottom: 25px;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+.content_box .content li{
+    text-align: justify;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin: 20px;
 }
 
 
 .content_box .content img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     margin: 10px;
     transition: all 300ms;
@@ -267,7 +277,7 @@ nav{
 }
 .opiniones h1{
     color: #000000;
-    font-size: 45px;
+    font-size: 2.5em;
     text-align:center;
     padding: 10px;
     margin-bottom: 50px;
@@ -301,7 +311,7 @@ nav{
     align-items: center;
 }
 .nombre-usuario-opinion h2{
-    font-size: 20px;
+    font-size: 1.5em;
     margin-right: 30px;
 }
 
@@ -317,15 +327,30 @@ nav{
     width: 100%;
 }
 .conteiner-info .text-opinion{
-    font-size: 18px;
+    font-size: 1em;
     margin-top: 0px;
 }
 .conteiner-info .text-tiempo{
-    font-size: 14px;
+    font-size: 1em;
     color: #716d6d;
     padding-top: 0px;
     margin-top: 0px;
 }
+.btn-comments button{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 220px;
+    color:white;
+    background-color:#E87A00;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+
 
 /* Estilos para el footer */
 footer {
@@ -339,6 +364,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    font-family: "Roboto";
     max-width: 1400px;
     margin: 50px auto;
 }
@@ -455,3 +481,38 @@ footer {
 }
 
 /* Footer */
+
+
+@media (max-width:1400px) {
+    .perfil-container{
+        display:block;
+        justify-content: center;
+    }
+    .perfil1{
+        width:100%;
+        margin:55px;
+        justify-content: center;
+        align-items: center;
+        
+        }   
+    .perfil2{
+            width:100%;
+            margin:55px;
+            }   
+}
+
+@media (max-width:850px){
+    .conteiner-info{
+        display:block;
+        width:100%;
+        margin-bottom:80px;
+
+    }
+    .comentarios{
+        justify-content:left;
+    }
+    .nombre-usuario-opinion{
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+}
