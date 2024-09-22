@@ -1,33 +1,29 @@
 let preguntas = document.querySelectorAll('.preguntas');
-let btnDropdown = document.querySelectorAll('.preguntas .more')
+let btnDropdown = document.querySelectorAll('.preguntas .more');
 let respuesta = document.querySelectorAll('.respuesta');
-let parrafo = document.querySelectorAll('.respuesta p');
 
-for ( let i = 0; i < btnDropdown.length; i ++ ) {
+btnDropdown.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        let respuestaActual = respuesta[index];
+        
 
-    let altoParrafo = parrafo[i].clientHeight;
-    let switchc = 0;
+        let parrafo = respuestaActual.querySelector('p') || respuestaActual.querySelector('ol');
+        
+        if (parrafo) {
 
-    btnDropdown[i].addEventListener('click', () => {
+            let altoParrafo = parrafo.getBoundingClientRect().height;
 
-        if ( switchc == 0 ) {
 
-            respuesta[i].style.height = `${altoParrafo}px`;
-            preguntas[i].style.marginBottom = '10px';
-            
-            switchc ++;
+            if (respuestaActual.style.height === "0px" || respuestaActual.style.height === "") {
+                respuestaActual.style.height = `${altoParrafo}px`;
+                respuestaActual.style.overflow = "visible"; 
+                preguntas[index].style.marginBottom = '10px';
+            } else {
 
-        }
-
-        else if ( switchc == 1 ) {
-
-            respuesta[i].style.height = `0`;
-            preguntas[i].style.marginBottom = '0';
-            
-            switchc --;
-            
+                respuestaActual.style.height = '0px';
+                respuestaActual.style.overflow = "hidden";
+                preguntas[index].style.marginBottom = '0';
             }
-
-    })
-
-}
+        }
+    });
+});
