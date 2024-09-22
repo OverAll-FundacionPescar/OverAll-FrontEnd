@@ -10,7 +10,7 @@
     font-style: normal;
 }
 .piazzolla{
-    font-family: 'Piazzolla';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 100 900;
 }
@@ -35,7 +35,7 @@ img{
     height: 100%;
 }
 a{
-    font-family: "Stardos Stencil";
+    font-family: "Roboto";
 }
 
 
@@ -105,7 +105,7 @@ nav{
 /*NAV*/
 /* HEADER */
 .Header{
-    height: 600px;
+    height: 650px;
     
     background-image: url(assets/FondoHeader.jpeg);
     background-repeat: no-repeat;
@@ -197,13 +197,13 @@ nav{
     justify-content: flex-start;
     margin-bottom: 80px;
     font-family: 'roboto';
-    font-size: 2.3rem;
+    font-size: 2.5em;
     text-decoration: none;
     color: white;
 
 }
 .Recomendados{
-    background-color: #455873;
+    background-color:#1d467e;
     padding: 50px;
 }
 .Recomendados section {
@@ -245,6 +245,7 @@ nav{
 }
 .recomendados-profile img{
     width: 60px;
+    height: 60px;
     border-radius: 30px;
     border: 1px grey solid;
 }
@@ -267,7 +268,7 @@ nav{
     text-align: start;
 }
 .testimonios-title h3{
-    font-size: 2.3rem;
+    font-size: 2.5em;
     color: #3E3D3D;
 
 }
@@ -281,6 +282,7 @@ nav{
 .opcontainer section{
     display: flex;
     flex-wrap: wrap;
+    height: 350px;
     
     justify-content: center;
     gap: 35px;
@@ -296,13 +298,13 @@ nav{
     justify-content:space-evenly;
     align-items: center;
     max-width: 300px;
-    height: fit-content;
+    height: 250px;
     font-family: "roboto";
     box-shadow: 0px 2px 4px #b1a4a4;
     gap: 20px;
 }
 .opiniones h6{
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 .opiniones figure{
     width: 80px;
@@ -356,7 +358,7 @@ nav{
 
 .about-content p{
     font-family: 'roboto';
-    font-size: 1.6rem;
+    font-size: 2.3em;
     color: #243A69;
     font-weight: bolder;
 }
@@ -366,12 +368,12 @@ nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     gap: 35px;
 }
 .team-container img{
-    width: 252px;
-    height: 272px;
+    width: 200px;
+    height: 210px;
     border-radius: 13px;
 
 }
