@@ -33,7 +33,7 @@ body{
     height: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 6;
-    background-color: rgb(241, 241, 246);
+    background-color: #E1EBED;
 }
 
 
